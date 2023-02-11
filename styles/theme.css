@@ -15,4 +15,7 @@
     text-white
     uppercase;
   }
+  .main_input{
+    @apply  rounded-full p-1 bg-gray drop-shadow-lg pl-4
+  }
 }

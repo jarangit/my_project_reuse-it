@@ -20,7 +20,11 @@ module.exports = {
         DEFAULT: "#ffff"
       },
       "gray": {
-        DEFAULT: "#e84747"
+        light:"#f7f7f7",
+        DEFAULT: "#E5E4E2"
+      },
+      "black": {
+        DEFAULT: "#000"
       }
     }
   },
