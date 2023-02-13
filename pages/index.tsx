@@ -3,8 +3,10 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import Banner from '@/components/layouts/banner'
+import CategoryList from '@/components/layouts/categoryList'
+import ShowProductSection from '@/components/sections/showProductSection'
+import { mockProducts } from '@/constants/productList'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -17,7 +19,21 @@ export default function Home() {
       </Head>
       <div className={`my_container`}>
         <Banner />
-        home page
+        <div className={`my-28`}>
+          <CategoryList />
+        </div>
+        <div className='mb-28'>
+          <ShowProductSection title={"popular"} data={mockProducts} />
+        </div>
+        <div className='mb-28'>
+          <ShowProductSection title={"popular"} data={mockProducts} />
+        </div>
+        <div className='mb-28'>
+          <ShowProductSection title={"popular"} data={mockProducts} />
+        </div>
+        <div className='mb-28'>
+          <ShowProductSection title={"popular"} data={mockProducts} />
+        </div>
       </div>
     </>
   )
