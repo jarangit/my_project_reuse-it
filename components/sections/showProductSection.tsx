@@ -13,7 +13,7 @@ const ShowProductSection = ({ title, data }: Props) => {
       <div className={"text-3xl font-bold uppercase text-center"}>{title}</div>
       <div className='absolute top-1 right-0 hover_red'>view all</div>
       </div>
-      <div className={`my-10 grid grid-cols-5 gap-y-6`}>
+      <div className={`my-10 grid grid-cols-5 gap-y-6 gap-5`}>
         {data.map((item: any, key: any) => (
           <div key={key}>
             <CardProductItem data = {item}/>

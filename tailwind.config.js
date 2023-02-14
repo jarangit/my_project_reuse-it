@@ -24,8 +24,11 @@ module.exports = {
         DEFAULT: "#E5E4E2"
       },
       "black": {
-        DEFAULT: "#000"
-      }
+        DEFAULT: "#505050"
+      },
+      "green": {
+        DEFAULT: "#41E845"
+      },
     }
   },
   plugins: [],

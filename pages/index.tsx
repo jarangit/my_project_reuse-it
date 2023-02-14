@@ -6,6 +6,8 @@ import Banner from '@/components/layouts/banner'
 import CategoryList from '@/components/layouts/categoryList'
 import ShowProductSection from '@/components/sections/showProductSection'
 import { mockProducts } from '@/constants/productList'
+import WhoSection from '@/components/layouts/whoSection'
+import WarningSection from '@/components/layouts/warningSection'
 
 
 export default function Home() {
@@ -26,15 +28,18 @@ export default function Home() {
           <ShowProductSection title={"popular"} data={mockProducts} />
         </div>
         <div className='mb-28'>
-          <ShowProductSection title={"popular"} data={mockProducts} />
+          <ShowProductSection title={"most liked"} data={mockProducts} />
         </div>
         <div className='mb-28'>
-          <ShowProductSection title={"popular"} data={mockProducts} />
+          <ShowProductSection title={"most view"} data={mockProducts} />
         </div>
         <div className='mb-28'>
-          <ShowProductSection title={"popular"} data={mockProducts} />
+          <ShowProductSection title={"hot"} data={mockProducts} />
         </div>
       </div>
+
+      <WhoSection />
+      <WarningSection />
     </>
   )
 }
