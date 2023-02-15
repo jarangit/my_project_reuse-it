@@ -3,7 +3,7 @@ import React, { createContext, useState, useEffect } from 'react'
 export const AppContext = createContext("")
 
 const AppState = ({ children }: any) => {
-  const [showModalCat, setShowModalCat] = useState(true)
+  const [showModalCat, setShowModalCat] = useState(false)
 
   return (
     // @ts-ignore
