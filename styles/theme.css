@@ -34,4 +34,7 @@
   .paper_white{
     @apply bg-white p-3 rounded-xl drop-shadow-lg
   }
+  .input_outline{
+    @apply bg-white border border-gray rounded-md p-1 px-3
+  }
 }

@@ -19,7 +19,9 @@ const Menu = () => {
       <div className="flex justify-between">
         <div className="flex items-center gap-10">
           <div>
-            <div className={`text-2xl text-green font-bold`}>REUSE-IT</div>
+            <Link href={`/`}>
+              <div className={`text-2xl text-green font-bold`}>REUSE-IT</div>
+            </Link>
           </div>
           <div className={`flex items-center gap-6`}>
             {menuList.map((item, key) => (

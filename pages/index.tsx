@@ -14,7 +14,6 @@ import { AppContext } from '@/context/appState'
 
 
 export default function Home() {
-  const {showModalCat, setShowModalCat}:any = useContext(AppContext)
   return (
     <>
       <Head>
@@ -45,8 +44,7 @@ export default function Home() {
       <WhoSection />
       <WarningSection />
 
-      {/* modal zone */}
-      <ShowAllCatModal title={'หมวดหมู่ทั้งหมด'} handleClose={() => setShowModalCat(false)} open={showModalCat} />
+    
     </>
   )
 }
