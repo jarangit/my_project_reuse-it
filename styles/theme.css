@@ -31,4 +31,7 @@
   .main_input{
     @apply  rounded-full p-1 bg-gray drop-shadow-lg pl-4
   }
+  .paper_white{
+    @apply bg-white p-3 rounded-xl drop-shadow-lg
+  }
 }

@@ -1,15 +1,18 @@
 import Link from "next/link"
-import React from "react"
+import React, { useContext } from "react"
 import { BiSearchAlt } from 'react-icons/bi'
 import { AiOutlineBell } from 'react-icons/ai'
 import { BsFillMusicPlayerFill } from 'react-icons/bs'
 import { menuList } from "@/constants/menuList"
+import { AppContext } from "@/context/appState"
 type Props = {
 
 }
 
 
 const Menu = () => {
+  const { showModalCat, setShowModalCat }: any = useContext(AppContext)
+
   return (
     <div className={`p-6 shadow-[-1px 7px 30px 9px rgba(0,0,0,0.47)] mb-10 bg-white drop-shadow-lg`}>
       <div className="flex justify-between">
@@ -20,11 +23,15 @@ const Menu = () => {
           <div className={`flex items-center gap-6`}>
             {menuList.map((item, key) => (
               <React.Fragment key={key}>
-                <Link href={item.link}>
+                {item.path === 'Category' ? (
+                  <div className={`hover_green`} onClick={() => setShowModalCat(true)}>
+                    {item.path}
+                  </div>
+                ) : (
                   <div className={`hover_green`}>
                     {item.path}
                   </div>
-                </Link>
+                )}
               </React.Fragment>
             ))}
           </div>
