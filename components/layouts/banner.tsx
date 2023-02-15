@@ -8,10 +8,10 @@ const Banner = (props: Props) => {
     <div className={`min-h-[500px] bg-gray rounded-xl px-24 drop-shadow-md py-16`}>
       <div className={`grid grid-cols-2 gap-10 `}>
         <div className={`flex gap-5 flex-col justify-center items-center`}>
-          <div className={`text-6xl font-bold uppercase text-red`}>Music Gear</div>
-          <p className='text-center'>Music Gear is a website for selling second-hand musical instruments and connecting buyers and sellers.</p>
+          <div className={`text-6xl font-bold uppercase text-green`}>REUSE-IT</div>
+          <p className='text-center'>REUSE-IT is a website for selling second-hand musical instruments and connecting buyers and sellers.</p>
           <div>
-            <button className='btn_red'>Get start</button>
+            <button className='btn_green'>Get start</button>
           </div>
         </div>
         <div className={`w-fit rounded-3xl overflow-hidden`}>

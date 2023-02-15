@@ -11,7 +11,7 @@ const ShowProductSection = ({ title, data }: Props) => {
     <div className={`border-b border-gray`}>
       <div className=' relative'>
       <div className={"text-3xl font-bold uppercase text-center"}>{title}</div>
-      <div className='absolute top-1 right-0 hover_red'>view all</div>
+      <div className='absolute top-1 right-0 hover_green'>view all</div>
       </div>
       <div className={`my-10 grid grid-cols-5 gap-y-6 gap-5`}>
         {data.map((item: any, key: any) => (
