@@ -1,5 +1,6 @@
 import React from 'react'
 import Modal from '../modal'
+import { categoryList } from '@/constants/categoryList';
 
 type Props = {
   title: string;
@@ -11,7 +12,14 @@ type Props = {
 const ShowAllCatModal = ({ title, handleClose, open, onSubmit }: Props) => {
   return (
     <Modal title={title} handleClose={handleClose} open={open} onSubmit={onSubmit} >
-      <div>ShowAllCatModal</div>
+      <div className={`grid grid-cols-6 gap-3  justify-center mx-auto flex-wrap p-6`}>
+        {categoryList.map((item: any, key: any) => (
+          <div key={key} className={`border-2 w-24 flex flex-col justify-center items-center gap-3 py-3 rounded-xl hover_green`}>
+            <div>{item.icon}</div>
+            <div>{item.name}</div>
+          </div>
+        ))}
+      </div>
     </Modal>
   )
 }

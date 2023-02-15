@@ -2,7 +2,8 @@ import Link from "next/link"
 import React, { useContext } from "react"
 import { BiSearchAlt } from 'react-icons/bi'
 import { AiOutlineBell } from 'react-icons/ai'
-import { BsFillMusicPlayerFill } from 'react-icons/bs'
+import { BsFillMusicPlayerFill, BsStars } from 'react-icons/bs'
+import { MdTouchApp } from 'react-icons/md'
 import { menuList } from "@/constants/menuList"
 import { AppContext } from "@/context/appState"
 type Props = {
@@ -34,6 +35,14 @@ const Menu = () => {
                 )}
               </React.Fragment>
             ))}
+            <div className={`relative cursor-pointer`}>
+              <div className={`absolute -top-1  -right-5 text-red`}>
+                <BsStars size={20} />
+              </div>
+              <div className={`text-yellow font-bold`}>
+                Short view
+              </div>
+            </div>
           </div>
         </div>
 
@@ -45,6 +54,11 @@ const Menu = () => {
             </div>
             <div className={`hover_green top-[2px] relative`}>
               <BiSearchAlt size={22} />
+            </div>
+            <div className={`relative text-yellow`}>
+              <div className={`hover_green`}>
+                <MdTouchApp size={25} />
+              </div>
             </div>
             <div className={`relative`}>
               <div className={`hover_green`}>

@@ -46,7 +46,7 @@ const Modal = ({ handleClose, open, children, onSubmit, title }: Props) => {
             animate="visible"
             exit="exit"
           >
-            <div className={`paper_white min-w-[500px] min-h-[300px]`}>
+            <div className={`paper_white min-w-[500px] min-h-[300px] max-h-[500px] overflow-y-scroll`}>
               {/* header modal */}
               <div className={`flex justify-between items-center border-b border-gray pb-3 mb-3`}>
                 <div className={`text-xl font-semibold`}>
