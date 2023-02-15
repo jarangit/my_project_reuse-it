@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 @layer components {
-  .hover_red {
-    @apply hover:text-red cursor-pointer
+  .hover_green {
+    @apply hover:text-green cursor-pointer
   transition-all;
   }
 
-  .btn_red {
-    @apply bg-red
+  .btn_green {
+    @apply bg-green
     px-4 py-1
     rounded-md
     text-white
@@ -18,13 +18,13 @@
   .btn_outline_red {
     @apply bg-white
     border-2
-    border-red
+    border-green
     px-4 py-1
     rounded-full
-    text-red
+    text-green
 
     hover:text-white
-    hover:bg-red
+    hover:bg-green
     transition-all
     uppercase;
   }

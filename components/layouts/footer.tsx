@@ -10,8 +10,8 @@ const Footer = (props: Props) => {
     <div className='p-24  bg-gray-light'>
       <div className={`grid grid-cols-4 gap-5 `}>
         <div className={`flex gap-3 flex-col`}>
-          <div className={`text-xl font-bold uppercase text-red`}>Music Gear</div>
-          <div className=' text-sm'>Music Gear is a website for selling second-hand musical instruments and connecting buyers and sellers.</div>
+          <div className={`text-xl font-bold uppercase text-green`}>REUSE-IT</div>
+          <div className=' text-sm'>REUSE-IT is a website for selling second-hand musical instruments and connecting buyers and sellers.</div>
         </div>
         <div>
           <div className='text-black font-bold mb-3'>Menu</div>
@@ -19,7 +19,7 @@ const Footer = (props: Props) => {
             {menuList.map((item, key) => (
               <li key={key} >
                 <Link href={item.link}>
-                  <div className='hover_red w-fit'>
+                  <div className='hover_green w-fit'>
                     {item.path}
                   </div>
                 </Link>
@@ -37,7 +37,7 @@ const Footer = (props: Props) => {
           <div className='text-black font-bold'>Subscribe to our email</div>
           <div className={`relative mt-3 `}>
             <input type="email" className={`main_input w-full`} placeholder='your email' />
-            <button className={`btn_red rounded-full absolute top-1 right-1 w-7 h-7 flex items-center justify-center`}>
+            <button className={`btn_green rounded-full absolute top-1 right-1 w-7 h-7 flex items-center justify-center`}>
               <div>
                 <BiMailSend size={18} />
               </div>

@@ -24,10 +24,10 @@ module.exports = {
         DEFAULT: "#E5E4E2"
       },
       "black": {
-        DEFAULT: "#505050"
+        DEFAULT: "#382C41"
       },
       "green": {
-        DEFAULT: "#41E845"
+        DEFAULT: "#65B2A0"
       },
     }
   },
