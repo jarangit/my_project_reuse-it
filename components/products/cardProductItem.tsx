@@ -19,8 +19,8 @@ const CardProductItem = ({ data }: Props) => {
         )}
       </div>
       <div className={`mt-2`}>
-        <strong>{name}</strong>
-        <div className='flex justify-between text-sm'>
+        <strong className='border-b w-full'>{name}</strong>
+        <div className='flex justify-end lg:justify-between text-sm flex-wrap items-end'>
           <div className='flex gap-2'>
             <div className='flex gap-[2px] items-center'>
               <AiOutlineHeart size={17} />

@@ -1,7 +1,7 @@
 import React from 'react'
 import CardProductItem from '../products/cardProductItem';
 import ProductListGrid from '../products/productListGrid';
-
+   
 type Props = {
   title: string;
   data: any;

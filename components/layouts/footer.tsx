@@ -36,7 +36,7 @@ const Footer = (props: Props) => {
         <div>
           <div className='text-black font-bold'>Subscribe to our email</div>
           <div className={`relative mt-3 `}>
-            <input type="email" className={`main_input w-full`} placeholder='your email' />
+            <input type="email" className={`gray_input w-full`} placeholder='your email' />
             <button className={`btn_green rounded-full absolute top-1 right-1 w-7 h-7 flex items-center justify-center`}>
               <div>
                 <BiMailSend size={18} />
