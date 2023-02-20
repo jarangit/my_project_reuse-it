@@ -11,6 +11,7 @@ import WarningSection from '@/components/layouts/warningSection'
 import ShowAllCatModal from '@/components/modals/category/showAllCatModal'
 import { useContext, useState } from 'react'
 import { AppContext } from '@/context/appState'
+import WhySection from '@/components/layouts/why'
 
 
 export default function Home() {
@@ -41,10 +42,11 @@ export default function Home() {
         </div>
       </div>
 
+      {/* section zone */}
       <WhoSection />
       <WarningSection />
+      <WhySection />
 
-    
     </>
   )
 }

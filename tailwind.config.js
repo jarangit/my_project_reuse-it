@@ -32,6 +32,9 @@ module.exports = {
       "yellow": {
         DEFAULT: "#f4b811"
       },
+      "pink": {
+        DEFAULT: "#ffe0e0"
+      },
     }
   },
   plugins: [],

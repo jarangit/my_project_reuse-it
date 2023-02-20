@@ -10,6 +10,13 @@ export const mockProducts = [
     totalLikes: 200,
     totalViews: 1000,
     createdAt: new Date('2022-01-01'),
+    imageGallery: [
+      'https://via.placeholder.com/400/4caf50/000000',
+      'https://via.placeholder.com/400/000000/4caf50',
+      'https://via.placeholder.com/400/333333/4caf50',
+      'https://via.placeholder.com/400/000000/4caf50',
+      'https://via.placeholder.com/400/333333/4caf50',
+    ]
   },
   {
     id: 2,
@@ -22,6 +29,13 @@ export const mockProducts = [
     totalLikes: 150,
     totalViews: 500,
     createdAt: new Date('2022-02-01'),
+    imageGallery: [
+      'https://via.placeholder.com/400/4caf50/000000',
+      'https://via.placeholder.com/400/000000/4caf50',
+      'https://via.placeholder.com/400/333333/4caf50',
+      'https://via.placeholder.com/400/000000/4caf50',
+      'https://via.placeholder.com/400/333333/4caf50',
+    ]
   },
   {
     id: 3,
@@ -34,6 +48,11 @@ export const mockProducts = [
     totalLikes: 175,
     totalViews: 800,
     createdAt: new Date('2022-03-01'),
+    imageGallery: [
+      'https://via.placeholder.com/400/4caf50/000000',
+      'https://via.placeholder.com/400/000000/4caf50',
+      'https://via.placeholder.com/400/333333/4caf50'
+    ]
   },
   {
     id: 4,
@@ -46,6 +65,11 @@ export const mockProducts = [
     totalLikes: 225,
     totalViews: 700,
     createdAt: new Date('2022-04-01'),
+    imageGallery: [
+      'https://via.placeholder.com/400/4caf50/000000',
+      'https://via.placeholder.com/400/000000/4caf50',
+      'https://via.placeholder.com/400/333333/4caf50'
+    ]
   },
   {
     id: 5,
@@ -58,6 +82,9 @@ export const mockProducts = [
     totalLikes: 125,
     totalViews: 600,
     createdAt: new Date('2022-05-01'),
+    imageGallery: [
+    
+    ]
   },
   {
     id: 6,
@@ -70,6 +97,11 @@ export const mockProducts = [
     totalLikes: 200,
     totalViews: 900,
     createdAt: new Date('2022-06-01'),
+    imageGallery: [
+      'https://via.placeholder.com/400/4caf50/000000',
+      'https://via.placeholder.com/400/000000/4caf50',
+      'https://via.placeholder.com/400/333333/4caf50'
+    ]
   },
   {
     id: 6,
@@ -82,6 +114,11 @@ export const mockProducts = [
     totalLikes: 200,
     totalViews: 900,
     createdAt: new Date('2022-06-01'),
+    imageGallery: [
+      'https://via.placeholder.com/400/4caf50/000000',
+      'https://via.placeholder.com/400/000000/4caf50',
+ 
+    ]
   },
   {
     id: 6,
@@ -94,5 +131,14 @@ export const mockProducts = [
     totalLikes: 200,
     totalViews: 900,
     createdAt: new Date('2022-06-01'),
+    imageGallery: [
+      'https://via.placeholder.com/400/4caf50/000000',
+      'https://via.placeholder.com/400/000000/4caf50',
+      'https://via.placeholder.com/400/333333/4caf50',
+      'https://via.placeholder.com/400/000000/4caf50',
+      'https://via.placeholder.com/400/333333/4caf50',
+      'https://via.placeholder.com/400/000000/4caf50',
+      'https://via.placeholder.com/400/333333/4caf50',
+    ]
   },
 ]
