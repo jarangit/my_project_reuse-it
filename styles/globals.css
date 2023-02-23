@@ -19,3 +19,18 @@ input{
 input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
+.scrollbar-color-purple::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 30px;
+
+}
+
+.scrollbar-color-purple::-webkit-scrollbar-track {
+  background: none;
+  border-radius: 30px;
+}
+
+.scrollbar-color-purple::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}

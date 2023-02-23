@@ -16,6 +16,16 @@ export const mockProducts = [
       'https://via.placeholder.com/400/333333/4caf50',
       'https://via.placeholder.com/400/000000/4caf50',
       'https://via.placeholder.com/400/333333/4caf50',
+      'https://via.placeholder.com/400/4caf50/000000',
+      'https://via.placeholder.com/400/000000/4caf50',
+      'https://via.placeholder.com/400/333333/4caf50',
+      'https://via.placeholder.com/400/000000/4caf50',
+      'https://via.placeholder.com/400/333333/4caf50',
+      'https://via.placeholder.com/400/4caf50/000000',
+      'https://via.placeholder.com/400/000000/4caf50',
+      'https://via.placeholder.com/400/333333/4caf50',
+      'https://via.placeholder.com/400/000000/4caf50',
+      'https://via.placeholder.com/400/333333/4caf50',
     ]
   },
   {

@@ -15,6 +15,13 @@
     text-white
     uppercase;
   }
+  .btn_black {
+    @apply bg-black
+    px-4 py-1
+    rounded-md
+    text-white
+    uppercase;
+  }
   .btn_outline_red {
     @apply bg-white
     border-2

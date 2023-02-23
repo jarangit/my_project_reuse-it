@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import React from 'react'
 import { AiOutlineHeart } from 'react-icons/ai'
 import { BsImages } from 'react-icons/bs'
@@ -10,7 +11,9 @@ type Props = {
 
 const CardProductItem = ({ data }: Props) => {
 
+  const { push } = useRouter()
   const {
+    id,
     name,
     description,
     price,
@@ -25,7 +28,7 @@ const CardProductItem = ({ data }: Props) => {
 
 
   return (
-    <div className={`cursor-pointer`}>
+    <div className={`cursor-pointer`} onClick={() => push(`/product/${id}`)}>
       <div className={`relative`}>
         <div className={`w-fit rounded-md overflow-hidden`}>
           <Image src={image} alt="" width={250} height={250} />
