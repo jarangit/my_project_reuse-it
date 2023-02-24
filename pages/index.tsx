@@ -44,7 +44,9 @@ export default function Home() {
 
       {/* section zone */}
       <WhoSection />
-      <WarningSection />
+      <div className='py-24'>
+        <WarningSection />
+      </div>
       <WhySection />
 
     </>

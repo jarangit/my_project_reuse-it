@@ -1,4 +1,6 @@
 import GalleryImage from '@/components/images/galleryImage'
+import WarningSection from '@/components/layouts/warningSection'
+import ShowProductSection from '@/components/sections/showProductSection'
 import { mockProducts } from '@/constants/productList'
 import { useRouter } from 'next/router'
 import React, { useCallback, useEffect, useState } from 'react'
@@ -62,8 +64,15 @@ const ProductDetailPage = (props: Props) => {
               <div>
                 <button className={`btn_black w-1/2`}>ติดต่อ</button>
               </div>
+              <WarningSection size = {'md'}/>
+
             </div>
           </div>
+        </div>
+
+        {/* other product */}
+        <div className='my-28'>
+          <ShowProductSection title={"ที่ค้าที่คล้ายกัน"} data={mockProducts} />
         </div>
       </div>
     </div>
