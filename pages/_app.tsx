@@ -1,3 +1,4 @@
+import DefaultLayout from '@/components/layouts/defaultLayout'
 import Layout from '@/components/layouts/layout'
 import AppState from '@/context/appState'
 import '@/styles/globals.css'

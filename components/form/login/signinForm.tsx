@@ -1,4 +1,6 @@
-import React from 'react'
+import { AppContext } from '@/context/appState';
+import { useRouter } from 'next/router';
+import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form';
 import { FcGoogle } from 'react-icons/fc';
 
@@ -6,12 +8,22 @@ type Props = {
   onToggle: any;
 }
 
-const SigningForm = ({onToggle}: Props) => {
+const SigningForm = ({ onToggle }: Props) => {
+  const { push } = useRouter()
 
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  const { setLoading }: any = useContext(AppContext)
+
   const onSubmit = (data: any) => console.log(data);
 
   console.log(watch("example")); // watch input value by passing the name of it
+  const onLogin = () => {
+    setLoading(true);
+    setTimeout(() => {
+      push("/user/jaran")
+      setLoading(false);
+    }, 500);
+  }
   return (
     <div>
       <div className='p-6 rounded-lg  max-w-[400px] drop-shadow-lg bg-white'>
@@ -30,7 +42,7 @@ const SigningForm = ({onToggle}: Props) => {
               <input {...register("password", { required: true })} className={`input_outline w-full`} placeholder='Password' />
             </div>
             <div>
-              <button className='btn_green w-full'>Login</button>
+              <button className='btn_green w-full' onClick={() => onLogin()}>Login</button>
             </div>
           </div>
 

@@ -4,7 +4,7 @@ export const mockProducts = [
     name: 'Guitar',
     description: 'A beautiful acoustic guitar',
     price: 299.99,
-    image: 'https://via.placeholder.com/150/f9a825/000000',
+    image: '',
     rating: 4.5,
     verified: true,
     totalLikes: 200,

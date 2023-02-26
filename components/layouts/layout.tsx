@@ -1,32 +1,15 @@
-import React, { useContext } from 'react'
-import Menu from './menu';
-import Footer from './footer';
-import ShowAllCatModal from '../modals/category/showAllCatModal';
-import { AppContext } from '@/context/appState';
-import MainLoading from '../loading/mainLoading';
+import React from 'react'
+import DefaultLayout from './defaultLayout';
+import LoggedLayout from './loggedLayout';
 
-type Props = {
-  children: JSX.Element;
-}
+// type Props = {
+//   props.children: JSX.Element;
+//   userLogged: boolean;
+// }
 
-const Layout = ({ children }: Props) => {
-
-  const { showModalCat, setShowModalCat, loading }: any = useContext(AppContext)
-
-
-  return (
-    <div>
-      <Menu />
-      <div className={`min-h-screen`}>
-        {children}
-      </div>
-      <Footer />
-      {/* modal zone */}
-      {/* modal zone */}
-      <ShowAllCatModal title={'หมวดหมู่ทั้งหมด'} handleClose={() => setShowModalCat(false)} open={showModalCat} />
-      <MainLoading onShow={loading} />
-    </div>
-  )
+const Layout = (props: any) => {
+  const { children } = props
+  return children.type.layout == 'logged' ? (<LoggedLayout>{children}</LoggedLayout>) : (<DefaultLayout>{children}</DefaultLayout>)
 }
 
 export default Layout

@@ -31,7 +31,11 @@ const CardProductItem = ({ data }: Props) => {
     <div className={`cursor-pointer`} onClick={() => push(`/product/${id}`)}>
       <div className={`relative`}>
         <div className={`w-fit rounded-md overflow-hidden`}>
-          <Image src={image} alt="" width={250} height={250} />
+          <Image src={image} alt="" width={250} height={250} onError={(e: any) => {
+            e.target.src = 'https://i.pinimg.com/564x/b7/f0/db/b7f0db1455d5a1fcfdb41ef6a13822e2.jpg';
+            e.target.width = 250
+            e.target.height = 250
+          }} />
         </div>
         {/* logo verified */}
         {verified && (
