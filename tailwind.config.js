@@ -9,7 +9,15 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        sm: ['14px', '20px'],
+        base: ['16px', '24px'],
+        lg: ['20px', '28px'],
+        xl: ['24px', '32px'],
+      },
+    },
+
     colors: {
       'red': {
         light: '#F06852',
@@ -20,8 +28,9 @@ module.exports = {
         DEFAULT: "#ffff"
       },
       "gray": {
-        light:"#f7f7f7",
-        DEFAULT: "#E5E4E2"
+        light: "#f7f7f7",
+        DEFAULT: "#E5E4E2",
+        dark: "#bcbcbc"
       },
       "black": {
         DEFAULT: "#000"

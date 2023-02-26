@@ -52,7 +52,7 @@ const Menu = () => {
         <div>
           <div className={`flex items-center gap-3`}>
             <div >
-              <button className={`btn_green`}>Login</button>
+              <Link href={"/login"} className={`btn_green`}>Login</Link>
             </div>
             <div className={`hover_green top-[2px] relative`}>
               <BiSearchAlt size={22} />

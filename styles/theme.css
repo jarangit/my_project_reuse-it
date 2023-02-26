@@ -12,36 +12,36 @@
     @apply bg-green
     px-4 py-1
     rounded-md
-    text-white
+    text-white cursor-pointer
     uppercase;
   }
   .btn_black {
     @apply bg-black
     px-4 py-1
     rounded-md
-    text-white
+    text-white cursor-pointer
     uppercase;
   }
-  .btn_outline_red {
+  .btn_outline_green {
     @apply bg-white
     border-2
     border-green
     px-4 py-1
-    rounded-full
+    rounded-lg
     text-green
-
+cursor-pointer
     hover:text-white
     hover:bg-green
     transition-all
     uppercase;
   }
-  .gray_input{
-    @apply  rounded-full p-1 bg-gray drop-shadow-lg pl-4
+  .gray_input {
+    @apply rounded-full p-1 bg-gray drop-shadow-lg pl-4;
   }
-  .paper_white{
-    @apply bg-white p-3 rounded-xl drop-shadow-lg
+  .paper_white {
+    @apply bg-white p-3 rounded-xl drop-shadow-lg;
   }
-  .input_outline{
-    @apply bg-white border border-gray rounded-md p-1 px-3 placeholder:text-sm
+  .input_outline {
+    @apply bg-white border border-gray rounded-md p-1 px-3 placeholder:text-sm;
   }
 }

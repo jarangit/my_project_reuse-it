@@ -1,6 +1,7 @@
 import GalleryImage from '@/components/images/galleryImage'
 import WarningSection from '@/components/layouts/warningSection'
 import ShowProductSection from '@/components/sections/showProductSection'
+import { categoryList } from '@/constants/categoryList'
 import { mockProducts } from '@/constants/productList'
 import { useRouter } from 'next/router'
 import React, { useCallback, useEffect, useState } from 'react'
@@ -64,7 +65,7 @@ const ProductDetailPage = (props: Props) => {
               <div>
                 <button className={`btn_black w-1/2`}>ติดต่อ</button>
               </div>
-              <WarningSection size = {'md'}/>
+              <WarningSection size={'md'} />
 
             </div>
           </div>
@@ -73,6 +74,18 @@ const ProductDetailPage = (props: Props) => {
         {/* other product */}
         <div className='my-28'>
           <ShowProductSection title={"ที่ค้าที่คล้ายกัน"} data={mockProducts} />
+        </div>
+
+        {/* tag section  */}
+        <div>
+          <div className={`text-3xl font-semibold`}>Tag</div>
+          <div className={`flex flex-wrap gap-1 mt-3`}>
+            {categoryList.map((item: any, key: any) => (
+              <div className={`bg-green text-white px-3 py-1 rounded-full w-fit text-xs`} key={key}>
+                <div>{item.name}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
