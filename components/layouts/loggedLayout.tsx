@@ -53,7 +53,7 @@ const LoggedLayout = ({ children }: Props) => {
                   </div>
                 </div>
               </div>
-              <div> {children}</div>
+              <div className='col-span-5'> {children}</div>
             </div>
           </div>
         </div>
